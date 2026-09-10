@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Skin Glowing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body>
+    <!-- topbar -->
+     <div class="bg-[#6B0606] py-1.5 ">
+        <div class="flex justify-center items-center gap-x-1.5">
+            <img src="images/fireicon.svg" alt="">
+            <p class="font-['Inter'] text-lg font-medium text-white hidden md:block">Only this month 20% discount on all services</p>
+            <p class="md:hidden font-['Inter'] text-lg font-medium text-white">20% discount on all services</p>
+            <img src="images/fireicon.svg" alt="">
+        </div>
+     </div>
+<header class="relative">
+
+    <!-- Navbar -->
+    <nav class="py-2 px-4 md:py-5 md:px-[4.5rem] flex items-center justify-between">
+
+        <!-- Social Icons Desktop -->
+        <div class="hidden md:flex md:justify-center md:items-center gap-x-3">
+            <img src="images/ficoninblack.svg" alt="Facebook">
+            <img src="images/instaiconinblack.svg" alt="Instagram">
+        </div>
+
+
+        <!-- Mobile Logo -->
+        <div class="md:hidden">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center">
+
+            <ul class="flex items-center gap-x-3.5">
+
+                <li>
+                    <a href="index.html"
+                        class="font-['Inter'] text-base font-semibold py-1 px-3 border-b-3 border-[#6B0606]">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        Services
+                    </a>
+                </li>
+
+
+                <!-- Desktop Center Logo -->
+                <li>
+                    <img src="images/logo.svg" class="py-1 px-3" alt="Logo">
+                </li>
+
+
+                <li>
+                    <a href="about.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Right Icons -->
+        <div class="flex justify-center items-center gap-x-3">
+
+            <img src="images/addtocarticon.svg" alt="Cart">
+
+            <img src="images/searchicon.svg" alt="Search">
+
+
+            <!-- Hamburger Button -->
+            <button id="menuBtn" class="md:hidden">
+                <img src="images/hamberger.svg" alt="Menu">
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu"
+        class="fixed top-0 right-0 w-[80%] max-w-[350px] h-screen bg-white z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-xl">
+
+
+        <!-- Top Section -->
+        <div class="flex justify-between items-center px-6 py-5 border-b">
+
+            <img src="images/logo.svg" alt="Logo" class="w-24">
+
+            <button id="closeBtn"
+                class="text-3xl font-light">
+                &times;
+            </button>
+
+        </div>
+
+
+
+        <!-- Navigation Links -->
+        <ul class="flex flex-col px-6 pt-8 gap-y-2">
+
+            <li>
+                <a href="index.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+
+
+        <!-- Social Icons -->
+        <div class="absolute bottom-10 left-6 flex gap-x-4">
+
+            <img src="images/ficoninblack.svg"
+                alt="Facebook"
+                class="w-6">
+
+            <img src="images/instaiconinblack.svg"
+                alt="Instagram"
+                class="w-6">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Dark Overlay -->
+    <div id="overlay"
+        class="fixed inset-0 bg-black/40 z-40 hidden md:hidden">
+    </div>
+
+</header>
+     <div class="flex justify-center items-center">
+        <div class="bg-[url('images/backgroundicontop.svg')] md:h-[256px] h-[150px] bg-contain  w-full bg-center bg-no-repeat flex  items-end justify-center ">
+           <p style="font-family:'Imperial Script'; " class="font-normal text-[50px]  md:text-[6.25rem] text-[#6B0606] pb-6">Beauty Salon</p>
+        </div>
+     </div>
+     <div>
+        <img class="w-full"  src="images/lips.svg" alt="">
+     </div>
+     <!-- herosection -->
+     <section>
+        <div class="px-5   md:px-[4.5rem] ">
+            <div class="py-6 md:py-[3.75rem] flex flex-col gap-y-5 md:gap-y-8">
+                <div class="text-center flex flex-col md:gap-y-5 gap-y-3">
+                    <p  style="font-family:'Playfair Display', serif;"  class="text-4xl  md:text-[3.125rem] font-bold  text-[#6B0606] leading-[130%]">Elegance comes from being as <br class="hidden md:block"> beautiful inside as outside</p>
+                    <p class="font-['Inter'] text-base font-normal text-[#000000]/50">Eleifend arcu non lorem justo in tempus purus gravida. Est tortor egestas sed feugiat elementum. Viverra <br  class="hidden md:block">  nulla amet a ultrices massa dui. Tortor est purus morbi vitae arcu suspendisse amet.</p>
+                </div>
+                <div class="grid  md:grid-cols-4   md:gap-x-6  gap-y-6 justify-center ">
+                    <div class="relative">
+                        <div>
+                            <img class="w-full" src="images/mehroonshade.svg" alt="">
+                        </div>
+                        <div class="absolute  z-5 flex lg:gap-x-6  gap-x-3 top-[65%] left-[0] bottom-[0] m-6 items-end  ">
+                            <img class="w-[64px] h-[64px] md:w-[40px] md:h-[40px] lg:w-[64px] lg:h-[64px]" src="images/brushicon.svg" alt="">
+                            <p class="text-white text-2xl md:text-xl lg:text-3xl font-bold  overflow-hidden " style="font-family: 'Playfair Display', serif;">make up</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div>
+                            <img class="w-full" src="images/brownhairstyle.svg" alt="">
+                        </div>
+                        <div class="absolute  z-5 flex lg:gap-x-6  gap-x-3 top-[65%] left-[0] bottom-[0] m-6 items-end  ">
+                            <img class="w-[64px] h-[64px] md:w-[40px] md:h-[40px] lg:w-[64px] lg:h-[64px]" src="images/combicon.svg" alt="">
+                            <p class="text-white text-2xl text-3xl md:text-xl lg:text-3xl font-bold overflow-hidden  " style="font-family: 'Playfair Display', serif;">hair styling</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div>
+                            <img class="w-full" src="images/lightpurplenailpaint.svg" alt="">
+                        </div>
+                        <div class="absolute  z-5 flex lg:gap-x-6  gap-x-3 top-[65%] left-[0] bottom-[0] m-6 items-end  ">
+                            <img class="w-[64px] h-[64px] md:w-[40px] md:h-[40px] lg:w-[64px] lg:h-[64px]" src="images/thumbicon.svg" alt="">
+                            <p class="text-white text-2xl text-3xl md:text-xl lg:text-3xl font-bold overflow-hidden " style="font-family: 'Playfair Display', serif;">nail care</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div>
+                            <img class="w-full" src="images/chickstylemakeuppppp.svg" alt="">
+                        </div>
+                        <div class="absolute  z-5 flex lg:gap-x-6  gap-x-3 top-[65%] left-[0] bottom-[0] m-6 items-end  ">
+                            <img class="w-[64px] h-[64px] md:w-[40px] md:h-[40px] lg:w-[64px] lg:h-[64px]" src="images/ficalicon.svg" alt="">
+                            <p class="text-white text-2xl text-3xl md:text-xl lg:text-3xl font-bold overflow-hidden leading-[100%]" style="font-family: 'Playfair Display', serif;">cosme<span class="hidden sm:block lg:hidden">-</span>tology</p>
+                        </div>
+                    </div>                    
+                </div>
+            
+            </div>
+        </div>
+        <div class="px-5   md:px-[4.5rem] flex flex-col md:flex-row gap-x-[110px] items-center">
+            <div class=" md:w-[45%] order-3 md:order-1" >
+                <img class="w-[550px] h-[494px] max-w-[100%] " src="images/types.png" alt="">
+            </div>
+            <div class="w-[100%] md:w-[55%] md:flex flex-col order-1">
+                <div class="md:w-[85%]">
+                    <div class="">
+                    <p class="font-bold text-3xl md:text-[50px] text-[#6B0606] leading-[130%]" style="font-family: 'Playfair Display', serif;">Treatments and prices</p>
+                    <p class="line-clamp-1 hover:line-clamp-none  font-['Inter'] text-base font-normal md:w-[90%] mt-4 text-[#000000]/50">Velit in dui dictum arcu felis tempor in feugiat in mauris 
+                    ut dictum at magna cursus. Malesuada aliquet ut lorem mollis vitae etiam sed eu suspendisse. Aliquam phasellus orci nulla sed est. Duis nisl placerat aliquet penatibus tellus. Augue faucibus at suspendisse porta feugiat malesuada quisque proin.</p>
+                </div>
+                <div class="mt-4  md:mt-2">
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Nail care</p></div>
+                        <div class=" flex-1 w-[50%] truncate text-[#000000]/50">..................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$25</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Hair Styling</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$30</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Make up</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50 ">.................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$50</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Cosmetology</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">.................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$30</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">SPA procedures</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$40</span></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+
+     </section>
+     <section>
+        <div class="lg:min-h-[654px] min-h-[40rem] h-auto bg-[linear-gradient(to_bottom,#F3E2D5_60%,#ffffff_40%)] lg:py-8 py-5 px-5">
+            <div class="max-w-[51.6875rem] mx-auto ">
+                <div class="flex flex-col justify-center text-center md:gap-y-5 gap-y-3">
+                    <p class=" font-bold text-3xl lg:text-[50px] text-[#6B0606]" style="font-family:'Playfair Display', serif ;">Testimonials</p>
+                    <p class="font-['Inter'] text-sm lg:text-base font-normal text-[#000000]/50">Eleifend arcu non lorem justo in tempus purus gravida tortor egestas sed feugiat elementum</p>
+                </div>
+            </div>
+            <div class="lg:max-w-[53.5rem] min-h-[450px] max-w-[40rem] mx-auto mt-5 lg:mt-16 bg-white min-h-[372px] shadow-sm relative  p-6 lg:p-0">
+                <div>
+                    <img class="absolute lg:-top-[8%] lg:right-[95%] -top-4 -left-4 z-5 w-10 h-10 lg:w-[88px] lg:h-[88px]" src="images/colonicons.svg" alt="">
+                </div>
+                <div>
+                    <img class="absolute lg:top-[9%] lg:left-[20%] top-[50%] left-[10%]" src="images/vshapeface.svg" alt="">
+                </div>
+                <div>
+                    <img class="absolute lg:top-[35%] lg:left-[10%] top-[70%] left-1/2 -translate-x-1/2" src="images/vshapegoldenhair.svg" alt="">
+                </div>
+                <div>
+                    <img class="absolute lg:bottom-[9%] lg:left-[20%] bottom-[32%] right-[10%]" src="images/vshapebrownhair.svg" alt="">
+                </div>
+                <div>
+                    <img class="absolute lg:top-[47%] lg:left-[30%] top-[52%] rotate-270 lg:rotate-0 left-1/2 -translate-x-1/2" src="images/Elipse+line.svg" alt="">
+                </div>
+                <div class=" lg:w-[45%] w-[80%] absolute lg:left-[45%] lg:top-[27%] left-[15%] flex flex-col lg:gap-y-5 gap-y-3">
+                    <div class="flex lg:flex-row flex-col  gap-x-3 lg:items-center mt-4 lg:mt-0">
+                        <p class="font-['Inter'] text-base lg:text-xl font-medium text-[#6B0606]">Michaela Hayden</p>
+                        <p class="font-['Inter'] text-sm lg:text-base font-normal text-[#000000]/50">Happy client</p>
+                    </div>
+                    <div>
+                        <p class="line-clamp-4 hover:line-clamp-none font-['Inter'] text-sm lg:text-base font-normal text-[#000000]">Quis euismod eu eleifend tristique. Rutrum eget turpis semper risus aliquam imperdiet amet. Quam bibendum ut eu sodales viverra adipiscing viverra lorem elit. Scelerisque auctor suspendisse ut et mauris dui ipsum. Habitant pellentesque imperdiet mi tellus neque fermentum elit neque. Adipiscing urna tincidunt ipsum varius hendrerit nunc.</p></div>
+                </div>
+                <div>
+                    <img class="absolute lg:-bottom-[8%] lg:left-[95%] z-5  -bottom-4 -right-4 z-5 w-10 h-10 lg:w-[88px] lg:h-[88px]" src="images/coloniconihorzontally.svg" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <section>
+        <div class="pb-6 md::pb-15">
+            <div class="relative ">
+                <img class="w-full" src="images/faceficalyellow.svg" alt="">
+
+                <img src="images/vedioicon.svg"alt=""class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 md:w-20 md:h-20">
+            </div>
+            <div class="flex flex-col  sm:flex-row justify-center lg:px-40 md:px-20  sm:px-10 sm:justify-between py-5 gap-y-5 sm:py-15 bg-[#F3E2D5] px-5">
+                <div class="flex flex-col  flex-1 sm:max-w-60  sm:gap-y-4 gap-y-2 ">
+                    <div class="flex justify-center items-center">
+                        <img class="" src="images/icerolericon.svg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center  gap-y-2 sm:gap-y-4">
+                        <p class="font-semibold text-xl font-['Inter'] text-[#6B0606]">Professional Care</p>
+                        <p class="font-light text-base font-['Inter'] text-[#000000]/50">Eleifend arcu non lorem justo in tempus purus gravida. </p>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 sm:max-w-60  sm:gap-y-4 gap-y-2">
+                    <div class="flex justify-center items-center">
+                        <img class="" src="images/facewashicon.svg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center  gap-y-2 sm:gap-y-4">
+                        <p class="font-semibold text-xl font-['Inter'] text-[#6B0606]">Premium brands</p>
+                        <p class="font-light text-base font-['Inter'] text-[#000000]/50">Eleifend arcu non lorem justo in tempus purus gravida.  </p>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 sm:max-w-60 sm:gap-y-4 gap-y-2">
+                    <div class="flex justify-center items-center">
+                        <img class=""  src="images/elloweraicon.svg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center sm:gap-y-4 gap-y-2">
+                        <p class="font-semibold text-xl font-['Inter'] text-[#6B0606]">Natural cosmetic</p>
+                        <p class="font-light text-base font-['Inter'] text-[#000000]/50">Eleifend arcu non lorem justo in tempus purus gravida.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section>
+        <div class="flex flex-col justify-center gap-y-8  px-5 sm:px-0">
+        <div class="flex flex-col justify-center text-center gap-y-5 ">
+            <p style="font-family:'Playfair Display', serif ;" class="font-bold md:text-[50px] text-3xl text-[#6B0606]">Our shop</p>
+            <div class="flex justify-center  max-w-full">
+                <p class=" md:line-clamp-1 md:hover:line-clamp-none text-center max-w-[25rem] md:max-w-[40rem] md:text-base text-sm font-['Inter'] font-normal text-[#000000]/50">Eleifend arcu non lorem justo in tempus purus gravida. Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae arcu suspendisse amet.</p>
+            </div>
+           
+        </div>
+        <div class="flex md:flex-row w-[100%] flex-col justify-center gap-y-4 md:justify-between gap-x-6 sm:px-[3rem] px-5 lg:px-[4.5rem] items-start">
+             <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/toner.png" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Face toner</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$20 / 50ml</p>
+                    <div class="flex gap-x-2 justify-center">
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">50 ml</p>
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">75 ml</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                <div class="flex justify-center hover:shadow-md ">
+                    <img class=" h-[320px]" src="images/nightcream.png" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2  ">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Night cream</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$32 / 50ml</p>
+                    <div class="flex gap-x-2 justify-center">
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">50 ml</p>
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">75 ml</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                 <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/makebase.png" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Makeup base</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$24 / 50ml</p>
+                    <div class="flex justify-center">
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">
+                            50 ml
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full ">
+                <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/makeupbrush.jpg" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Make up brush</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$20 </p>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+     </section>
+     <section>
+        <div class="flex flex-col pt-6 md:pt-16 gap-y-6 md:gap-y-10">
+            <div class="flex flex-col justify-center text-center gap-y-6 px-5 ">
+                <p class="font-bold md:text-[50px] text-3xl  text-[#6B0606] " style="font-family:'Playfair Display', serif ;">Follow our Instagram</p>
+                <p class="font-['Inter'] text-sm md:text-base font-normal text-[#000000]/50">Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae arcu suspendisse amet.</p>
+            </div>
+            <div class="">
+                <div class="grid grid-cols-5">
+                    <div>
+                        <img class="w-[100%]"  src="images/sectionpic1.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="w-[100%]" src="images/sectionpic2.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="w-[100%]"  src="images/sectionpic3.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="w-[100%]" src="images/sectionpic4.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="w-[100%]" src="images/sectionpic5.svg" alt="">
+                    </div>
+                </div>
+                <div class="grid grid-cols-5">
+                    <div>
+                        <img class="w-[100%]" src="images/sectionpic6.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="w-[100%]" src="images/sectionpic7.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="w-[100%]" src="images/sectionpic8.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="w-[100%]" src="images/sectionpic9.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="w-[100%]" src="images/sectionpic10.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+     </section>
+     <footer>
+        <div class="Flex flex-col bg-[#F3E2D5] px-5 justify-center sm:px-[3rem] lg:px-[4.5rem] pt-6 md:pt-20 pb-5  bg-[url('images/backgroundicontop.svg')] bg-center bg-no-repeat bg-contain">
+            <div class="flex flex-col md:gap-y-6 gap-y-4 justify-center ">
+               <div class="flex flex-col justify-center max-w-[25rem] mx-auto">
+                    <div class="flex justify-center">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="flex gap-x-6 justify-center">
+                        <p class="font-normal text-3xl md:text-[50px] text-[#6B0606] leading-[90%]" style="font-family:'Imperial Script' ;">Beauty</p>
+                        <p class="font-normal text-3xl md:text-[50px] text-[#6B0606] leading-[90%]" style="font-family:'Imperial Script';">Salon</p>
+                    </div>
+                </div>
+                <div class="max-w-[25rem] mx-auto text-center">
+                    <p class="text-sm md:text-base fnt-['Inter'] font-normal text-[#000000]/50">Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae arcu suspendisse amet.</p>
+                </div>
+                <div class="flex gap-x-3 max-w-[25rem] mx-auto">
+                    <img src="images/Facebook.svg" alt="">
+                    <img src="images/X.svg" alt="">
+                    <img src="images/Twitter.svg" alt="">
+                    <img src="images/Telegram.svg" alt="">
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="flex flex-col md:flex-row md:justify-between items-center gap-y-2 ">
+                    <div>
+                        <p class="font-['Inter'] text-center text-[#ffffff]/50 text-xs md:text-base font-normal">©Copyright Real Estate 2023. Design by Figma.guru</p>
+                    </div>
+                    <div>
+                        <img src="images/payment-icons.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+     </footer>
+<script src="script.js"></script>
+</body>
+</html>

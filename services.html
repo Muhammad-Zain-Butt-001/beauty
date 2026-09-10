@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Skin Glowing</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <div class="bg-[#6B0606] py-1.5 ">
+        <div class="flex justify-center items-center gap-x-1.5">
+            <img src="images/fireicon.svg" alt="">
+            <p class="font-['Inter'] text-lg font-medium text-white hidden md:block">Only this month 20% discount on all services</p>
+            <p class="md:hidden font-['Inter'] text-lg font-medium text-white">20% discount on all services</p>
+            <img src="images/fireicon.svg" alt="">
+        </div>
+     </div>
+    <header class="relative">
+
+    <!-- Navbar -->
+    <nav class="py-2 px-4 md:py-5 md:px-[4.5rem] flex items-center justify-between">
+
+        <!-- Social Icons Desktop -->
+        <div class="hidden md:flex md:justify-center md:items-center gap-x-3">
+            <img src="images/ficoninblack.svg" alt="Facebook">
+            <img src="images/instaiconinblack.svg" alt="Instagram">
+        </div>
+
+
+        <!-- Mobile Logo -->
+        <div class="md:hidden">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center">
+
+            <ul class="flex items-center gap-x-3.5">
+
+                <li>
+                    <a href="index.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html"
+                        class="font-['Inter'] text-base font-semibold py-1 px-3 border-b-3 border-[#6B0606]">
+                        Services
+                    </a>
+                </li>
+
+
+                <!-- Desktop Center Logo -->
+                <li>
+                    <img src="images/logo.svg" class="py-1 px-3" alt="Logo">
+                </li>
+
+
+                <li>
+                    <a href="about.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Right Icons -->
+        <div class="flex justify-center items-center gap-x-3">
+
+            <img src="images/addtocarticon.svg" alt="Cart">
+
+            <img src="images/searchicon.svg" alt="Search">
+
+
+            <!-- Hamburger Button -->
+            <button id="menuBtn" class="md:hidden">
+                <img src="images/hamberger.svg" alt="Menu">
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu"
+        class="fixed top-0 right-0 w-[80%] max-w-[350px] h-screen bg-white z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-xl">
+
+
+        <!-- Top Section -->
+        <div class="flex justify-between items-center px-6 py-5 border-b">
+
+            <img src="images/logo.svg" alt="Logo" class="w-24">
+
+            <button id="closeBtn"
+                class="text-3xl font-light">
+                &times;
+            </button>
+
+        </div>
+
+
+
+        <!-- Navigation Links -->
+        <ul class="flex flex-col px-6 pt-8 gap-y-2">
+
+            <li>
+                <a href="index.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+
+
+        <!-- Social Icons -->
+        <div class="absolute bottom-10 left-6 flex gap-x-4">
+
+            <img src="images/ficoninblack.svg"
+                alt="Facebook"
+                class="w-6">
+
+            <img src="images/instaiconinblack.svg"
+                alt="Instagram"
+                class="w-6">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Dark Overlay -->
+    <div id="overlay"
+        class="fixed inset-0 bg-black/40 z-40 hidden md:hidden">
+    </div>
+
+</header>
+     <div class="flex justify-center items-center">
+        <div class="bg-[url('images/backgroundicontop.svg')] md:h-[256px] h-[150px] bg-contain  w-full bg-center bg-no-repeat flex  items-end justify-center ">
+           <p style="font-family:'Imperial Script'; " class="font-normal text-[50px]  md:text-[6.25rem] text-[#6B0606] pb-6">Services</p>
+        </div>
+     </div>
+     <div>
+        <img class="w-full"  src="images/nail.svg" alt="">
+     </div>
+<section class="md:mb-30 mb-12">
+    <div class="flex justify-center text-center flex-col md:gap-y-6 gap-y-3  px-5 mt-6 md:mt-15">
+        <div>
+            <p class="md:text-[50px] text-3xl font-bold text-[#6B0606]" style="font-family: 'Playfair Display', serif;">Services and prices</p>
+        </div>
+        <div class="md:max-w-[45rem] max-w-[25rem] mx-auto text-center">
+            <p class=" text-base font-normal text-[#000000]/50 font-['Inter'] ">
+                Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae arcu suspendisse amet.
+            </p>
+        </div>
+
+    </div>
+    <!-- 11111111111111111 -->
+     <div class=" px-5 mt-4  md:px-[4.5rem] flex flex-col-reverse md:flex-row gap-x-[110px] items-center">
+            <div class=" md:w-[50%] order-3 md:order-1" >
+                <img class="w-full h-auto" src="images/rani.png" alt="">
+            </div>
+            <div class="w-[100%] md:w-[50%] md:flex flex-col order-1">
+                <div class="md:w-[75%]">
+                    <div class="">
+                    <p class="font-bold text-3xl md:text-[50px] text-[#6B0606] leading-[130%]" style="font-family: 'Playfair Display', serif;">Make up </p>
+                    <p class="line-clamp-1 hover:line-clamp-none  font-['Inter'] text-base font-normal md:w-[90%] mt-4 text-[#000000]/50">Velit in dui dictum arcu felis tempor in feugiat in mauris 
+                    ut dictum at magna cursus. Malesuada aliquet ut lorem mollis vitae etiam sed eu suspendisse. Aliquam phasellus orci nulla sed est. Duis nisl placerat aliquet penatibus tellus. Augue faucibus at suspendisse porta feugiat malesuada quisque proin.</p>
+                </div>
+                <div class="mt-4  md:mt-2">
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Daily make up</p></div>
+                        <div class=" flex-1 w-[50%] truncate text-[#000000]/50">......................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$30</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Night make up</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$40</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Bridal make up</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50 ">.....................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$50</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Ocassion make up</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">.....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$50</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Television make up</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">...................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$70</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a class=" font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606] underline underline-offset-4" href="">View all</a>
+                    </div>
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 222222222222222222222222222222 -->
+        <div class="px-5 mt-4  md:px-[4.5rem] flex flex-col-reverse md:flex-row-reverse gap-x-[110px] items-center">
+            <div class=" md:w-[50%] order-3 md:order-1" >
+                <img class="w-full h-auto" src="images/curling.png" alt="">
+            </div>
+            <div class="w-[100%] md:w-[50%] md:flex flex-col order-1">
+                <div class="md:w-[75%]">
+                    <div class="">
+                    <p class="font-bold text-3xl md:text-[50px] text-[#6B0606] leading-[130%]" style="font-family: 'Playfair Display', serif;">Hair styling </p>
+                    <p class="line-clamp-1 hover:line-clamp-none  font-['Inter'] text-base font-normal md:w-[90%] mt-4 text-[#000000]/50">Velit in dui dictum arcu felis tempor in feugiat in mauris 
+                    ut dictum at magna cursus. Malesuada aliquet ut lorem mollis vitae etiam sed eu suspendisse. Aliquam phasellus orci nulla sed est. Duis nisl placerat aliquet penatibus tellus. Augue faucibus at suspendisse porta feugiat malesuada quisque proin.</p>
+                </div>
+                <div class="mt-4  md:mt-2">
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Simple haircut</p></div>
+                        <div class=" flex-1 w-[50%] truncate text-[#000000]/50">......................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$30</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Hair Styling</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$25</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Full hair color</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50 ">.....................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$99</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Protein treatment</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">.....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$50</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Hair mask</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">...................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$13</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a class=" font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606] underline underline-offset-4" href="">View all</a>
+                    </div>
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 33333333333333333333333333333 -->
+       <div class="px-5 mt-4  md:px-[4.5rem] flex flex-col-reverse md:flex-row gap-x-[110px] items-center">
+            <div class=" md:w-[50%] order-3 md:order-1" >
+                <img class="w-full h-auto" src="images/nailing.png" alt="">
+            </div>
+            <div class="w-[100%] md:w-[50%] md:flex flex-col order-1">
+                <div class="md:w-[75%]">
+                    <div class="">
+                    <p class="font-bold text-3xl md:text-[50px] text-[#6B0606] leading-[130%]" style="font-family: 'Playfair Display', serif;">Nail care  </p>
+                    <p class="line-clamp-1 hover:line-clamp-none  font-['Inter'] text-base font-normal md:w-[90%] mt-4 text-[#000000]/50">Velit in dui dictum arcu felis tempor in feugiat in mauris 
+                    ut dictum at magna cursus. Malesuada aliquet ut lorem mollis vitae etiam sed eu suspendisse. Aliquam phasellus orci nulla sed est. Duis nisl placerat aliquet penatibus tellus. Augue faucibus at suspendisse porta feugiat malesuada quisque proin.</p>
+                </div>
+                <div class="mt-4  md:mt-2">
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Manicure</p></div>
+                        <div class=" flex-1 w-[50%] truncate text-[#000000]/50">......................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$15</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Pedicure</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$35</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">French manicure</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50 ">.....................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$20</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Manicure & gel nails</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">.....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$40</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Gel polish+reaplication</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">...................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$25</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a class=" font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606] underline underline-offset-4" href="">View all</a>
+                    </div>
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 4444444444 -->
+        <div class="px-5 mt-4  md:px-[4.5rem] flex flex-col-reverse md:flex-row-reverse gap-x-[110px] items-center">
+            <div class=" md:w-[50%] order-3 md:order-1" >
+                <img class="w-full h-auto" src="images/mesaging.png" alt="">
+            </div>
+            <div class="w-[100%] md:w-[50%] md:flex flex-col order-1">
+                <div class="md:w-[75%]">
+                    <div class="">
+                    <p class="font-bold text-3xl md:text-[50px] text-[#6B0606] leading-[130%]" style="font-family: 'Playfair Display', serif;">Cosmetology </p>
+                    <p class="line-clamp-1 hover:line-clamp-none  font-['Inter'] text-base font-normal md:w-[90%] mt-4 text-[#000000]/50">Velit in dui dictum arcu felis tempor in feugiat in mauris 
+                    ut dictum at magna cursus. Malesuada aliquet ut lorem mollis vitae etiam sed eu suspendisse. Aliquam phasellus orci nulla sed est. Duis nisl placerat aliquet penatibus tellus. Augue faucibus at suspendisse porta feugiat malesuada quisque proin.</p>
+                </div>
+                <div class="mt-4  md:mt-2">
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Botox</p></div>
+                        <div class=" flex-1 w-[50%] truncate text-[#000000]/50">......................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$80</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Chemical Peel</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$75</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Laser Skin Resurfacing</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50 ">.....................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$50</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Laser Hair Removal</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">.....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$25</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Tattoo Removal</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">...................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$25</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a class=" font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606] underline underline-offset-4" href="">View all</a>
+                    </div>
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 555555555555555555555555555 -->
+        <div class="px-5 mt-4  md:px-[4.5rem] flex flex-col-reverse md:flex-row gap-x-[110px] items-center">
+            <div class=" md:w-[50%] order-3 md:order-1" >
+                <img class="w-full h-auto" src="images/ficiling.png" alt="">
+            </div>
+            <div class="w-[100%] md:w-[50%] md:flex flex-col order-1">
+                <div class="md:w-[75%]">
+                    <div class="">
+                    <p class="font-bold text-3xl md:text-[50px] text-[#6B0606] leading-[130%]" style="font-family: 'Playfair Display', serif;">SPA procedures  </p>
+                    <p class="line-clamp-1 hover:line-clamp-none  font-['Inter'] text-base font-normal md:w-[90%] mt-4 text-[#000000]/50">Velit in dui dictum arcu felis tempor in feugiat in mauris 
+                    ut dictum at magna cursus. Malesuada aliquet ut lorem mollis vitae etiam sed eu suspendisse. Aliquam phasellus orci nulla sed est. Duis nisl placerat aliquet penatibus tellus. Augue faucibus at suspendisse porta feugiat malesuada quisque proin.</p>
+                </div>
+                <div class="mt-4  md:mt-2">
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Body scrub & smoothing</p></div>
+                        <div class=" flex-1 w-[50%] truncate text-[#000000]/50">......................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$60</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Indulge & relax</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$50</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Slimming & drainage</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50 ">.....................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$55</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Aromatherapy</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">.....................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$60</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex">
+                        <div><p class="font-['Inter'] text-base font-medium leading-[150%]">Foot revive treatment</p></div>
+                        <div class="flex-1 w-[50%] truncate text-[#000000]/50">...................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div>
+                            <p class="font-['Inter'] text-xs font-normal leading-[150%] text-[#000000]/50">from<span class="font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606]">$50</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a class=" font-['Inter'] text-base font-normal leading-[150%] text-[#6B0606] underline underline-offset-4" href="">View all</a>
+                    </div>
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+</section>
+
+<!-- contactsection -->
+
+<section>
+    <div class="md:py-15 md:px-[4.5rem] px-5 py-6 bg-[#F3E2D5]   flex justify-center items-center">
+        <div class="w-[75rem] flex md:flex-row mx-auto min-h-[660px] gap-x-10 flex-col-reverse">
+            <div class="md:w-[40%] flex justify-center items-center">
+                <img class="w-[100%]" src="images/formimage.svg" alt="">
+            </div>
+            <div class="md:w-[70%] flex flex-col md:gap-y-6 gap-y-5 justify-center">
+                <div class="flex flex-col md:gap-y-6 gap-y-5">
+                    <div>
+                        <p class="font-['Inter'] text-[#6B0606] text-base font-medium">Beauty salon</p>
+                    </div>
+                    <div>
+                        <p class="md:text-[40px] text-3xl font-bold" style="font-family: 'Playfair Display' , serif;">Book appointment</p>
+                    </div>
+                    <div>
+                        <p class="font-['Inter']  text-base  font-normal">Mi senectus ac ullamcorper sollicitudin volutpat sit a velit. Purus scelerisque</p>
+                    </div>
+                </div>
+                <div>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5">
+                        <!-- 1card -->
+                        <div class="flex flex-col gap-y-2">
+                            <div>
+                                <p class="text-base font-semibold" style="font-family: 'Playfair Display' , serif;">First Name</p>
+                            </div>
+                            <div>
+                                <input class="p-2.5 text-[#000000]/50 border border-[#000000]/50 w-full  text-base font-normal" style="font-family: 'Playfair Display' , serif;" type="text" placeholder="First Name">
+                            </div>
+                        </div>
+                        <!-- 1card -->
+                        <div class="flex flex-col gap-y-2">
+                            <div>
+                                <p class="text-base font-semibold" style="font-family: 'Playfair Display' , serif;">Last Name</p>
+                            </div>
+                            <div>
+                                <input class="p-2.5 text-[#000000]/50 border border-[#000000]/50 w-full text-base font-normal" style="font-family: 'Playfair Display' , serif;"  type="text" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <!-- 1card -->
+                        <div class="flex flex-col gap-y-2">
+                            <div>
+                                <p class="text-base font-semibold" style="font-family: 'Playfair Display' , serif;">Email</p>
+                            </div>
+                            <div>
+                                <input class="p-2.5 text-[#000000]/50 border border-[#000000]/50 w-full text-base font-normal" style="font-family: 'Playfair Display' , serif;"  type="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <!-- 1card -->
+                        <div class="flex flex-col gap-y-2">
+                            <div>
+                                <p class="text-base font-semibold" style="font-family: 'Playfair Display' , serif;" >Phone</p>
+                            </div>
+                            <div>
+                                <input class="p-2.5 text-[#000000]/50 border border-[#000000]/50 w-full text-base font-normal" style="font-family: 'Playfair Display' , serif;"  type="tel" placeholder="Phone">
+                            </div>
+                        </div>
+                        <!-- 1card -->
+                        <div class="flex flex-col gap-y-2">
+                            <div>
+                                <p class="text-base font-semibold" style="font-family: 'Playfair Display' , serif;">Date</p>
+                            </div>
+                            <div>
+                                <input class="p-2.5 text-[#000000]/50 border border-[#000000]/50 w-full text-base font-normal" style="font-family: 'Playfair Display' , serif;"  type="date" placeholder="">
+                            </div>
+                        </div>
+                        <!-- 1card -->
+                        <div class="flex flex-col gap-y-2">
+                            <div>
+                                <p class="text-base font-semibold" style="font-family: 'Playfair Display' , serif;">Time</p>
+                            </div>
+                            <div>
+                                <input class="p-2.5 text-[#000000]/50 border border-[#000000]/50 w-full text-base font-normal " style="font-family: 'Playfair Display' , serif;"  type="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <!-- 1card -->
+                        <select  class="p-2.5 text-[#000000]/50 border border-[#000000]/50 w-full md:col-span-2 appearance-none" >
+                            <option class="text-base font-normal" style="font-family: 'Playfair Display' , serif;">Select Service</option>
+                            <option class="text-base font-normal" style="font-family: 'Playfair Display' , serif;">Makeup</option>
+                            <option class="text-base font-normal" style="font-family: 'Playfair Display' , serif;">Facial</option>
+                            <option class="text-base font-normal" style="font-family: 'Playfair Display' , serif;">Hair Styling</option>
+                        </select>
+                        <button class="bg-red-900 text-white py-3 text-base font-normal md:col-span-2 hover:bg-red-800 transition" style="font-family: 'Playfair Display' , serif;">
+                            Send message
+                        </button>
+                    </form>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ourshop -->
+<section>
+<div class="md:py-15 md:px-[4.5rem] py-6 px-5 flex flex-col md:gap-y-10 gap-y-6">
+    <div class="flex flex-col md:gap-y-6 gap-y-3">
+        <div class="flex justify-center text-center">
+            <p class="font-bold text-3xl md:text-[50px] text-[#6B0606] " style="font-family:'Playfair Display', serif ;">Our shop</p>
+        </div>
+        <div class="max-w-[40rem] mx-auto text-center">
+            <p class="md:line-clamp-1 md:hover:line-clamp-none font-[Inter] font-normal text-base text-[#000000]/50">Eleifend arcu non lorem justo in tempus purus gravida. Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae arcu suspendisse amet.</p>
+        </div>
+    </div>
+    <div class="flex justify-between text-center overflow-x-auto  gap-x-8 " style="scrollbar-width: none;">
+        <div class="shrink-0">
+            <p class="font-[Inter] font-medium text-base text-[#6B0606] underline">All products</p>
+        </div>
+        <div class="shrink-0">
+            <p class="font-[Inter] font-medium text-base hover:text-[#6B0606] hover:underline">Nail polishes</p>
+        </div>
+        <div class="shrink-0">
+            <p class="font-[Inter] font-medium text-base hover:text-[#6B0606] hover:underline">Makeup bases</p>
+        </div>
+        <div class="shrink-0">
+            <p class="font-[Inter] font-medium text-base hover:text-[#6B0606] hover:underline">Lipsticks</p>
+        </div>
+        <div class="shrink-0">
+            <p class="font-[Inter] font-medium text-base hover:text-[#6B0606] hover:underline">Night creams</p>
+        </div>
+        <div class="shrink-0">
+            <p class="font-[Inter] font-medium text-base hover:text-[#6B0606] hover:underline">Mascaras</p>
+        </div>
+        <div class="shrink-0">
+            <p class="font-[Inter] font-medium text-base hover:text-[#6B0606] hover:underline">Eyebrow pencils</p>
+        </div>
+    </div>
+    <!-- images -->
+    <div class="flex flex-col gap-y-6">
+        <div class="">
+            <!-- 1111111111111111 -->
+             <div class="flex md:flex-row w-[100%] flex-col justify-center gap-y-4 md:justify-between gap-x-6 sm:px-[3rem] px-5 lg:px-[4.5rem] items-start">
+             <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/kit.png" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Eye shadow</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$55</p>
+                    <!-- <div class="flex gap-x-2 justify-center">
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">50 ml</p>
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">75 ml</p>
+                    </div> -->
+                </div>
+            </div>
+            <!-- 2222222222222222 -->
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                <div class="flex justify-center hover:shadow-md ">
+                    <img class=" h-[320px]" src="images/nightcream.png" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2  ">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Night cream</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$32 / 50ml</p>
+                    <div class="flex gap-x-2 justify-center">
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">50 ml</p>
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">75 ml</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 33333333333333333333 -->
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                 <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/makebase.png" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Makeup base</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$24 / 50ml</p>
+                    <div class="flex justify-center">
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">
+                            50 ml
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <!-- 44444444444444444444444 -->
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full ">
+                <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/makeupbrush.jpg" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Make up brush</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$20 </p>
+                    
+                </div>
+            </div>
+        </div>
+           
+        </div>
+        <div>
+           <div class="flex md:flex-row w-[100%] flex-col justify-center gap-y-4 md:justify-between gap-x-6 sm:px-[3rem] px-5 lg:px-[4.5rem] items-start">
+             <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/base.webp" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Makeup base</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$32 / 50ml</p>
+                    <div class="flex gap-x-2 justify-center">
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">50 ml</p>
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">75 ml</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                <div class="flex justify-center hover:shadow-md ">
+                    <img class=" h-[320px]" src="images/roselipstuck.png" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2  ">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]"> Red lipstick</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$10</p>
+                    
+                </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full">
+                 <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/pinklipstick.png" alt=""> 
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Rose lipstick</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$20</p>
+                    <div class="flex justify-center">
+                        
+                    </div> 
+                </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-center gap-y-2 text-center w-full ">
+                <div class="flex justify-center  hover:shadow-md">
+                    <img class=" h-[320px]" src="images/pink.png" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-xl font-semibold  font-['Inter'] text-[#000000]">Nail polish</p>
+                    <p class="text-base font-['Inter'] font-semibold text-[#000000]/50">$20 </p>
+                    <div class="flex gap-x-2 justify-center">
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">50 ml</p>
+                        <p class="bg-[#6B0606] text-white font-['Inter'] text-sm font-medium py-1 px-2">75 ml</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</section>
+
+      <footer>
+        <div class="Flex flex-col bg-[#F3E2D5] px-5 justify-center sm:px-[3rem] lg:px-[4.5rem] pt-6 md:pt-20 pb-5  bg-[url('images/backgroundicontop.svg')] bg-center bg-no-repeat bg-contain">
+            <div class="flex flex-col md:gap-y-6 gap-y-4 justify-center ">
+               <div class="flex flex-col justify-center max-w-[25rem] mx-auto">
+                    <div class="flex justify-center">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="flex gap-x-6 justify-center">
+                        <p class="font-normal text-3xl md:text-[50px] text-[#6B0606] leading-[90%]" style="font-family:'Imperial Script' ;">Beauty</p>
+                        <p class="font-normal text-3xl md:text-[50px] text-[#6B0606] leading-[90%]" style="font-family:'Imperial Script';">Salon</p>
+                    </div>
+                </div>
+                <div class="max-w-[25rem] mx-auto text-center">
+                    <p class="text-sm md:text-base fnt-['Inter'] font-normal text-[#000000]/50">Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae arcu suspendisse amet.</p>
+                </div>
+                <div class="flex gap-x-3 max-w-[25rem] mx-auto">
+                    <img src="images/Facebook.svg" alt="">
+                    <img src="images/X.svg" alt="">
+                    <img src="images/Twitter.svg" alt="">
+                    <img src="images/Telegram.svg" alt="">
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="flex flex-col md:flex-row md:justify-between items-center gap-y-2 ">
+                    <div>
+                        <p class="font-['Inter'] text-center text-[#ffffff]/50 text-xs md:text-base font-normal">©Copyright Real Estate 2023. Design by Figma.guru</p>
+                    </div>
+                    <div>
+                        <img src="images/payment-icons.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+     </footer>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Skin Glowing</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        
+     @keyframes marquee {
+     0% {
+      transform: translateX(0);
+        }
+        100% {
+      transform: translateX(-100%);
+        }
+    }
+
+    .animate-marquee {
+    animation: marquee 15s linear infinite;
+    }
+
+
+    </style>
+    
+</head>
+<body>
+     <div class="bg-[#6B0606] py-1.5 ">
+        <div class="flex justify-center items-center gap-x-1.5">
+            <img src="images/fireicon.svg" alt="">
+            <p class="font-['Inter'] text-lg font-medium text-white hidden md:block">Only this month 20% discount on all services</p>
+            <p class="md:hidden font-['Inter'] text-lg font-medium text-white">20% discount on all services</p>
+            <img src="images/fireicon.svg" alt="">
+        </div>
+     </div>
+<header class="relative">
+
+    <!-- Navbar -->
+    <nav class="py-2 px-4 md:py-5 md:px-[4.5rem] flex items-center justify-between">
+
+        <!-- Social Icons Desktop -->
+        <div class="hidden md:flex md:justify-center md:items-center gap-x-3">
+            <img src="images/ficoninblack.svg" alt="Facebook">
+            <img src="images/instaiconinblack.svg" alt="Instagram">
+        </div>
+
+
+        <!-- Mobile Logo -->
+        <div class="md:hidden">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center">
+
+            <ul class="flex items-center gap-x-3.5">
+
+                <li>
+                    <a href="index.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        Services
+                    </a>
+                </li>
+
+
+                <!-- Desktop Center Logo -->
+                <li>
+                    <img src="images/logo.svg" class="py-1 px-3" alt="Logo">
+                </li>
+
+
+                <li>
+                    <a href="about.html"
+                        class="font-['Inter'] text-base font-semibold py-1 px-3 border-b-3 border-[#6B0606]">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="font-['Inter'] text-base font-normal py-1 px-3 hover:border-b-3 hover:border-[#6B0606]">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Right Icons -->
+        <div class="flex justify-center items-center gap-x-3">
+
+            <img src="images/addtocarticon.svg" alt="Cart">
+
+            <img src="images/searchicon.svg" alt="Search">
+
+
+            <!-- Hamburger Button -->
+            <button id="menuBtn" class="md:hidden">
+                <img src="images/hamberger.svg" alt="Menu">
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu"
+        class="fixed top-0 right-0 w-[80%] max-w-[350px] h-screen bg-white z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-xl">
+
+
+        <!-- Top Section -->
+        <div class="flex justify-between items-center px-6 py-5 border-b">
+
+            <img src="images/logo.svg" alt="Logo" class="w-24">
+
+            <button id="closeBtn"
+                class="text-3xl font-light">
+                &times;
+            </button>
+
+        </div>
+
+
+
+        <!-- Navigation Links -->
+        <ul class="flex flex-col px-6 pt-8 gap-y-2">
+
+            <li>
+                <a href="index.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                    class="block py-4 text-lg font-medium border-b">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="absolute bottom-10 left-6 flex gap-x-4">
+
+            <img src="images/ficoninblack.svg"
+                alt="Facebook"
+                class="w-6">
+
+            <img src="images/instaiconinblack.svg"
+                alt="Instagram"
+                class="w-6">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Dark Overlay -->
+    <div id="overlay"
+        class="fixed inset-0 bg-black/40 z-40 hidden md:hidden">
+    </div>
+
+</header>
+     <div class="flex justify-center items-center">
+        <div class="bg-[url('images/backgroundicontop.svg')] md:h-[256px] h-[150px] bg-contain  w-full bg-center bg-no-repeat flex  items-end justify-center ">
+           <p style="font-family:'Imperial Script'; " class="font-normal text-[50px]  md:text-[6.25rem] text-[#6B0606] pb-6">About  Us</p>
+        </div>
+     </div>
+     <div>
+        <img class="w-full"  src="images/interiorsaloon.svg" alt="">
+     </div>
+<section>
+    <div class="flex flex-col md:py-15 py-6  md:gap-y-10 px-5  gap-y-5">
+        <div class="flex justify-center text-center">
+            <p class="font-bold md:text-[50px] text-3xl text-[#6B0606]" style="font-family: 'Playfair Display', serif ;">We can create what you imagine</p>
+        </div>
+        <div class="flex flex-col gap-y-2.5 max-w-[70rem] mx-auto">
+            <div>
+                <p class="text-xl font-normal text-[#6B0606]" style="font-family:'Playfair Display', serif  ;"> Blandit at maecenas </p>
+            </div>
+            <div class="flex gap-x-6 md:flex-row flex-col gap-y-5">
+                <div class="flex-1 gap-y-2">
+                    <p class="md:text-base text-sm font-['Inter'] font-normal ">Blandit at maecenas dui sed amet sit enim vitae. Amet purus dictum urna sagittis dignissim. At fermentum nisl ullamcorper orci. Pellentesque id tempor lacus aliquet tempus vitae nibh habitasse consectetur. Augue quis cras blandit habitant neque. Faucibus vestibulum id nisi ligula ultricies et vehicula.</p>
+                    <p class="md:text-base text-sm font-['Inter'] font-normal ">Et adipiscing mattis egestas mi placerat duis congue id. Scelerisque integer pulvinar justo sed egetipsum faucibus</p>
+                </div>
+                <div class="flex-1 gap-y-2">
+                    <p class="md:text-base text-sm font-['Inter'] font-normal ">Lorem ipsum dolor sit amet consectetur. Blandit at maecenas dui sed amet sit enim vitae. Amet purus dictum urna sagittis dignissim. At fermentum nisl ullamcorper orci.</p>
+                    <p class="md:text-base text-sm font-['Inter'] font-normal ">Pellentesque id tempor lacus aliquet tempus vitae nibh habitasse consectetur. Augue quis cras blandit habitant neque. Faucibus vestibulum id nisi ligula ultricies et vehicula.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+        <div class=" bg-[linear-gradient(to_bottom,#F3E2D5_60%,#ffffff_40%)] lg:py-8 py-5 px-5">
+            <div class="max-w-[51.6875rem] mx-auto ">
+                <div class="flex flex-col justify-center text-center md:gap-y-5 gap-y-3">
+                    <p class=" font-bold text-3xl lg:text-[50px] text-[#6B0606]" style="font-family:'Playfair Display', serif ;">Our SPA procedures</p>
+                    <p class="font-['Inter'] text-sm lg:text-base font-normal text-[#000000]/50">Eleifend arcu non lorem justo in tempus purus gravida. Est tortor egestas sed feugiat elementum. </p>
+                </div>
+            </div>
+            <div class="flex justify-center mt-5">
+                <img src="images/spavedio.svg" alt="">
+            </div>
+        </div>
+     </section>
+
+     <section>
+        <div class="md:py-15 py-6">
+            <div class="flex flex-col-reverse md:flex-row max-w-[70rem] mx-auto gap-x-[4.5rem] px-5 justify-center items-center gap-y-6">
+                <div class="md:w-[50%]">
+                    <img src="images/brownbackgroud.svg" alt="">
+                </div>
+                <div class="md:w-[50%] flex flex-col gap-y-6 md:gap-y-10">
+                    <div>
+                        <p class="font-bold text-3xl md:text-[50px] text-[#6B0606]" style="font-family:'Playfair Display', serif ;">Styles from the city, service from out of this world</p>
+                    </div>
+                    <div>
+                        <p class="font-normal font-['Inter'] text-base ">Lorem ipsum dolor sit amet consectetur. Blandit at maecenas dui sed amet sit enim vitae. Amet purus dictum urna sagittis dignissim. At fermentum nisl ullamcorper orci.</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="px-4 py-2 bg-[#6B0606] text-white text-lg  md:text-2xl font-bold " style="font-family:'Playfair Display', serif ;">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+<section>
+    <div class=" md:py-10 py-6  flex md:gap-x-[142px] gap-x-[60px]  md:px-[4.5rem] px-5 bg-[#F3E2D5] overflow-hidden ">
+        <div class="flex  flex-row md:gap-x-[142px] gap-x-[60px] items-center justify-between items-center animate-marquee ">
+            
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/circle.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/mistelo.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/beyond.svg" alt="">
+                </div>
+            
+            
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/blooming.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center"> 
+                     <img class=" max-w-[100%] object-contain" src="images/flora.svg" alt="">
+                </div>
+            
+            
+        </div>
+        <div class="flex  flex-row md:gap-x-[142px] gap-x-[60px] items-center justify-between items-center animate-marquee ">
+            
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/circle.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/mistelo.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/beyond.svg" alt="">
+                </div>
+            
+            
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/blooming.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center"> 
+                     <img class=" max-w-[100%] object-contain" src="images/flora.svg" alt="">
+                </div>
+            
+            
+        </div>
+        <div class="flex  flex-row md:gap-x-[142px] gap-x-[60px] items-center justify-between items-center animate-marquee ">
+            
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/circle.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/mistelo.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/beyond.svg" alt="">
+                </div>
+            
+            
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                    <img class=" max-w-[100%] object-contain" src="images/blooming.svg" alt="">
+                </div>
+                <div class="md:w-[112px] md:h-[112px] w-[60px] h-[60px] flex items-center">
+                     <img class=" max-w-[100%] object-contain" src="images/flora.svg" alt="">
+                </div>
+            
+            
+        </div>
+        
+    </div>
+</section>
+
+
+
+<section>
+    <div class="md:py-15 md:px-[4.5rem] px-5 py-8 flex flex-col md:gap-y-10 gap-y-5">
+        <div class=" flex flex-col gap-y-6 justify-center text-center">
+            <p class="font-bold text-3xl md:text-[50px] text-[#6B0606]" style="font-family:'Playfair Display', serif  ;">Our Team</p>
+            <p class="font-['Inter'] text-base text-[#000000]/50 font-normal">Meet our professionals</p>
+        </div>
+        <div class="flex  flex-col gap-y-6">
+            <!-- 1row -->
+            <div class="flex flex-col md:flex-row gap-x-6 gap-y-6">
+                <!-- 1caed -->
+                <div class="flex flex-col gap-y-4  md:items-center md:justify-end">
+                    <div class="hover:shadow-md max-w-[18.75rem] md:max-w-[100%] mx-auto">
+                        <img src="images/Marianna Holder.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center text-center gap-y-3">
+                        <div class="flex flex-col justify-center text-center gap-y-1">
+                            <p class="font-bold text-[28px] " style="font-family: 'Playfair Display', serif;">Marianna Holder</p>
+                            <p class="font-['Inter'] text-base font-normal text-[#000000]/50">Hairdresser</p>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3">
+                            <img src="images/Facebook.svg" alt="">
+                            <img src="images/X.svg" alt="">
+                            <img src="images/Twitter.svg" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- 1caed -->
+                <div class="flex flex-col gap-y-4 md:relative md:mb-10">
+                    <div class="hover:shadow-md max-w-[18.75rem] md:max-w-[100%] mx-auto">
+                        <img src="images/Tiffany Anderson.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center text-center gap-y-3">
+                        <div class="flex flex-col justify-center text-center gap-y-1">
+                            <p class="font-bold text-[28px] " style="font-family: 'Playfair Display', serif;">Tiffany Anderson</p>
+                            <p class="font-['Inter'] text-base font-normal text-[#000000]/50">Hairdresser</p>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3">
+                            <img src="images/Facebook.svg" alt="">
+                            <img src="images/X.svg" alt="">
+                            <img src="images/Twitter.svg" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- 1caed -->
+                <div class="flex flex-col gap-y-4 md:items-center md:justify-end">
+                    <div class="hover:shadow-md max-w-[18.75rem] md:max-w-[100%] mx-auto">
+                        <img src="images/Brianna Fitzgerald.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center text-center gap-y-3">
+                        <div class="flex flex-col justify-center text-center gap-y-1">
+                            <p class="font-bold text-[28px] " style="font-family: 'Playfair Display', serif;">Brianna Fitzgerald</p>
+                            <p class="font-['Inter'] text-base font-normal text-[#000000]/50">Hairdresser</p>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3">
+                            <img src="images/Facebook.svg" alt="">
+                            <img src="images/X.svg" alt="">
+                            <img src="images/Twitter.svg" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2row -->
+            <div class="flex gap-x-6 flex-col md:flex-row gap-y-6">
+                <div class="flex flex-col gap-y-4 md:items-center md:justify-end">
+                    <div class="hover:shadow-md max-w-[18.75rem] md:max-w-[100%] mx-auto">
+                        <img src="images/Jaqueline Colon.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center text-center gap-y-3">
+                        <div class="flex flex-col justify-center text-center gap-y-1">
+                            <p class="font-bold text-[28px] " style="font-family: 'Playfair Display', serif;">Jaqueline Colon</p>
+                            <p class="font-['Inter'] text-base font-normal text-[#000000]/50">Hairdresser</p>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3">
+                            <img src="images/Facebook.svg" alt="">
+                            <img src="images/X.svg" alt="">
+                            <img src="images/Twitter.svg" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-y-4 md:relative md:mb-10  ">
+                    <div class="hover:shadow-md max-w-[18.75rem] md:max-w-[100%] mx-auto">
+                        <img src="images/Wanda Cummerata.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center text-center gap-y-3">
+                        <div class="flex flex-col justify-center text-center gap-y-1">
+                            <p class="font-bold text-[28px] " style="font-family: 'Playfair Display', serif;">Wanda Cummerata</p>
+                            <p class="font-['Inter'] text-base font-normal text-[#000000]/50">Hairdresser</p>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3">
+                            <img src="images/Facebook.svg" alt="">
+                            <img src="images/X.svg" alt="">
+                            <img src="images/Twitter.svg" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-y-4 md:items-center md:justify-end">
+                    <div class="hover:shadow-md max-w-[18.75rem] md:max-w-[100%] mx-auto">
+                        <img src="images/Cameron Banks.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center text-center gap-y-3">
+                        <div class="flex flex-col justify-center text-center gap-y-1">
+                            <p class="font-bold text-[28px] " style="font-family: 'Playfair Display', serif;">Cameron Banks</p>
+                            <p class="font-['Inter'] text-base font-normal text-[#000000]/50">Hairdresser</p>
+                        </div>
+                        <div class="flex justify-center items-center gap-x-3">
+                            <img src="images/Facebook.svg" alt="">
+                            <img src="images/X.svg" alt="">
+                            <img src="images/Twitter.svg" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section>
+    <div class="md:py-[120px] py-10 bg-[#F3E2D5] relative overflow-hidden px-5 md:px-10">
+    
+            <img class="absolute -top-[20%] -right-[10%] rotate-270 max-w-[550px]" src="images/2backgroundicon.svg" alt="">
+
+            <div class=" mx-auto max-w-[856px] min-h-[372px] bg-[url('images/baseboxes.svg')] bg-cover flex flex-col justify-center text-center md:py-10 md:px-6 px-6 px-5 md:gap-y-10 gap-y-6">
+                <div>
+                    <p class="font-bold text-2xl md:text-[40px] text-[#ffffff]" style="font-family:'Playfair Display', serif  ;" >-25% Off</p>
+                    <p class="font-bold text-2xl md:text-[40px] text-[#ffffff]" style="font-family:'Playfair Display', serif  ;">Make up & Nail care  </p>
+                </div>
+                <div>
+                    <button class="font-bold text-xl md:text-2xl text-[#ffffff] px-10 py-2 bg-[#6B0606]" style="font-family:'Playfair Display', serif  ;">
+                        Book now
+                    </button>
+                </div>
+            </div>
+            <img class="absolute bttom-[10%] -left-[5%] max-w-[550px]" src="images/2backgroundicon.svg" alt="">
+        
+    </div>
+</section>
+<section>
+    <div class="md:py-15 md:px-[4.5rem] py-6 px-5 flex flex-col md:gap-y-10 gap-x-6">
+        <div class=" flex flex-col gap-y-6 justify-center text-center">
+            <p class="font-bold text-3xl md:text-[50px] text-[#6B0606]" style="font-family:'Playfair Display', serif  ;">Our Blog</p>
+            <p class="font-['Inter'] text-base text-[#000000]/50 font-normal">Latest news</p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-x-6 gap-y-6 justify-center items-center ">
+            <div class="flex flex-1 flex-col gap-y-4 ">
+                <div>
+                    <img src="images/grayface.svg" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <div class="flex flex-col gap-y-2">
+                        <p class="font-['Inter'] text-base text-[#000000]/50 font-normal">Spa / Treatment</p>
+                        <p style="font-family:'Playfair Display', serif  ;" class="font-bold text-xl">Lacus in elementum faucibus odio nisl purus</p>
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                        <p class="font-['Inter'] text-sm font-medium text-[#6B0606]">Read more</p>
+                        <img src="images/arrow-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-1 flex-col gap-y-4 justify-center">
+                <div>
+                    <img src="images/10nails.svg" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <div class="flex flex-col gap-y-2">
+                        <p class="font-['Inter'] text-base text-[#000000]/50 font-normal">Nail care / Treatment  </p>
+                        <p style="font-family:'Playfair Display', serif  ;" class="font-bold text-xl">Pulvinar dolor leo tortor tincidunt ac aliquet ultricies</p>
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                        <p class="font-['Inter'] text-sm font-medium text-[#6B0606]">Read more</p>
+                        <img src="images/arrow-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-1 flex-col gap-y-4 justify-center">
+                <div>
+                    <img src="images/jarooooooooooo.svg" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <div class="flex flex-col gap-y-2">
+                        <p class="font-['Inter'] text-base text-[#000000]/50 font-normal">Make up / News</p>
+                        <p style="font-family:'Playfair Display', serif  ;" class="font-bold text-xl">Nam pellentesque dui sed element  porttitor accumsan</p>
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                        <p class="font-['Inter'] text-sm font-medium text-[#6B0606]">Read more</p>
+                        <img src="images/arrow-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-1 flex-col gap-y-4 justify-center">
+                <div>
+                    <img src="images/serum.svg" alt="">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <div class="flex flex-col gap-y-2">
+                        <p class="font-['Inter'] text-base text-[#000000]/50 font-normal">Cosmetology / Treatment</p>
+                        <p style="font-family:'Playfair Display', serif  ;" class="font-bold text-xl">Bibendum eu gravida nulla erat pharetra egestas leo</p>
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                        <p class="font-['Inter'] text-sm font-medium text-[#6B0606]">Read more</p>
+                        <img src="images/arrow-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer>
+        <div class="Flex flex-col bg-[#F3E2D5] px-5 justify-center sm:px-[3rem] lg:px-[4.5rem] pt-6 md:pt-20 pb-5  bg-[url('images/backgroundicontop.svg')] bg-center bg-no-repeat bg-contain">
+            <div class="flex flex-col md:gap-y-6 gap-y-4 justify-center ">
+               <div class="flex flex-col justify-center max-w-[25rem] mx-auto">
+                    <div class="flex justify-center">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="flex gap-x-6 justify-center">
+                        <p class="font-normal text-3xl md:text-[50px] text-[#6B0606] leading-[90%]" style="font-family:'Imperial Script' ;">Beauty</p>
+                        <p class="font-normal text-3xl md:text-[50px] text-[#6B0606] leading-[90%]" style="font-family:'Imperial Script';">Salon</p>
+                    </div>
+                </div>
+                <div class="max-w-[25rem] mx-auto text-center">
+                    <p class="text-sm md:text-base fnt-['Inter'] font-normal text-[#000000]/50">Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae arcu suspendisse amet.</p>
+                </div>
+                <div class="flex gap-x-3 max-w-[25rem] mx-auto">
+                    <img src="images/Facebook.svg" alt="">
+                    <img src="images/X.svg" alt="">
+                    <img src="images/Twitter.svg" alt="">
+                    <img src="images/Telegram.svg" alt="">
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="flex flex-col md:flex-row md:justify-between items-center gap-y-2 ">
+                    <div>
+                        <p class="font-['Inter'] text-center text-[#ffffff]/50 text-xs md:text-base font-normal">©Copyright Real Estate 2023. Design by Figma.guru</p>
+                    </div>
+                    <div>
+                        <img src="images/payment-icons.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+     </footer>
+<script src="script.js"></script>
+</body>
+</html>
